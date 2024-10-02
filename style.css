@@ -1,11 +1,131 @@
-body{
-    background-color: #252525;
+body {
+    background-color: #1d2127;
+    color: white;
 }
 
 article {
-    background-color: #494949;
+    width: 100vw;
+    height: 100vh;
 }
 
-.frontpage {
+.frontpage {}
 
+.frontpage header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 7em;
+}
+
+.frontpage>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 97%;
+}
+
+.frontpage>div>div>img {
+    height: 75vh;
+    filter: grayscale();
+    mix-blend-mode: color-dodge;
+    position: absolute;
+    z-index: -1;
+    top: 189px;
+    right: -423px;
+}
+
+.name {
+    color: rgb(234, 185, 64)
+}
+
+.frontpage .info {
+    display: flex;
+    flex-direction: column;
+    height: 10em;
+    justify-content: center;
+}
+
+.frontpage>div> :has(.info) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    scale: 1;
+    filter: invert();
+    height: 100%;
+    filter: invert(1) sepia(0.4) saturate(10000%) hue-rotate(358deg);
+}
+
+
+.about {
+    display: flex;
+    justify-content: center;
+}
+
+.about>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.about>div>h1{
+    width: 70vw;
+    margin-left: -3em;
+}
+
+.about>div>p{
+    width: 70vw;
+}
+
+
+.frontpage>div> :has(img) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* position: absolute; */
+    overflow: visible;
+    position: relative;
+}
+
+
+
+.frontpage .info>button {
+    text-wrap: nowrap;
+    text-align: left;
+    width: min-content;
+    padding: 0.5em;
+    border: 1px solid rgb(234, 185, 64);
+    border-radius: 5em;
+    background-color: transparent;
+    color: rgb(234, 185, 64);
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills > div {
+    width: 75vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.skills > div > .skill {
+    margin: 1em;
+    width: 10em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #2d333c;
+    border-radius: 2em;
 }
