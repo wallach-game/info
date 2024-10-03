@@ -72,12 +72,12 @@ article {
     width: 100vw;
 }
 
-.about>div>h1{
+.about>div>h1 {
     width: 70vw;
     margin-left: -3em;
 }
 
-.about>div>p{
+.about>div>p {
     width: 70vw;
 }
 
@@ -111,14 +111,14 @@ article {
     justify-content: center;
 }
 
-.skills > div {
+.skills>div {
     width: 75vw;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
-.skills > div > .skill {
+.skills>div>.skill {
     margin: 1em;
     width: 10em;
     height: 10em;
@@ -128,4 +128,41 @@ article {
     justify-content: space-around;
     background-color: #2d333c;
     border-radius: 2em;
+}
+
+.experience>div {
+    display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
+}
+
+
+.experience>div>div {
+    width: 43vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    margin: 4em;
+    max-width: 43vw;
+}
+
+.experience>div>div>* {
+    margin: 0;
+}
+
+.experience>div>div>p{
+    margin-top: 1em;
+}
+
+
+.experience>div>div>div {
+    position: relative;
+    top: 3.6em;
+    left: -3em;
+    text-align: center;
+    width: min-content;
 }
