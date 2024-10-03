@@ -143,7 +143,7 @@ article {
 .experience>div>div {
     width: 43vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     flex-grow: 1;
     margin: 4em;
@@ -159,10 +159,10 @@ article {
 }
 
 
-.experience>div>div>div {
-    position: relative;
+.experience>div>div>div>div {
+    /* position: relative;
     top: 3.6em;
     left: -3em;
     text-align: center;
-    width: min-content;
+    width: min-content; */
 }
