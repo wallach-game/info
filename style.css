@@ -5,10 +5,12 @@ body {
 
 article {
     width: 100vw;
-    height: 100vh;
+
 }
 
-.frontpage {}
+.frontpage {
+    height: 100vh;
+}
 
 .frontpage header {
     display: flex;
@@ -62,6 +64,7 @@ article {
 .about {
     display: flex;
     justify-content: center;
+    height: 100vh;
 }
 
 .about>div {
@@ -109,6 +112,7 @@ article {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .skills>div {
