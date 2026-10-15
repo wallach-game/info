@@ -1,5 +1,6 @@
 name = "portfolio"
 main = "worker/index.js"
+account_id = "8226377668fb674dac82b43c91ce0b94"
 compatibility_date = "2026-10-01"
 
 [assets]
