@@ -1,0 +1,16 @@
+name = "numerlab-portfolio"
+main = "worker/index.js"
+compatibility_date = "2026-10-01"
+
+[assets]
+directory = "./portfolio"
+binding = "ASSETS"
+run_worker_first = true
+
+# Deploys to https://numerlab-portfolio.<your-subdomain>.workers.dev by default.
+# Uncomment to serve numerlab.org (this REPLACES whatever currently serves the domain;
+# the zone must be on Cloudflare):
+# routes = [
+#   { pattern = "numerlab.org", custom_domain = true },
+#   { pattern = "www.numerlab.org", custom_domain = true },
+# ]
