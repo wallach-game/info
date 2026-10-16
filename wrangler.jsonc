@@ -1,8 +1,0 @@
-{
-  "name": "portfolio",
-  "compatibility_date": "2026-10-01",
-  "assets": { "directory": "./public" },
-  "routes": [
-    { "pattern": "numerlab.org", "custom_domain": true }
-  ]
-}

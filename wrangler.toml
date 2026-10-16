@@ -1,0 +1,17 @@
+name = "portfolio"
+main = "worker/index.js"
+account_id = "8226377668fb674dac82b43c91ce0b94"
+compatibility_date = "2026-10-01"
+
+[assets]
+directory = "./portfolio"
+binding = "ASSETS"
+run_worker_first = true
+
+# Deploys the existing "portfolio" Worker. The domain is attached in the Cloudflare dashboard;
+# Uncomment to serve numerlab.org (this REPLACES whatever currently serves the domain;
+# the zone must be on Cloudflare):
+# routes = [
+#   { pattern = "numerlab.org", custom_domain = true },
+#   { pattern = "www.numerlab.org", custom_domain = true },
+# ]
