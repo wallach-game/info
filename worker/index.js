@@ -1,8 +1,5 @@
 // Cloudflare Worker: serves the static portfolio from ./portfolio and adds
 // security + cache headers. Assets are bound as env.ASSETS (see wrangler.toml).
-// /api and /llms.txt describe the services for AI agents (see profile.js).
-
-import { PROFILE, llmsTxt } from "./profile.js";
 
 const SECURITY_HEADERS = {
   "Content-Security-Policy":
@@ -26,18 +23,6 @@ export default {
 
     if (request.method !== "GET" && request.method !== "HEAD") {
       return new Response("Method Not Allowed", { status: 405, headers: { Allow: "GET, HEAD" } });
-    }
-
-    if (url.pathname === "/api" || url.pathname === "/llms.txt") {
-      const isJson = url.pathname === "/api";
-      return new Response(isJson ? JSON.stringify(PROFILE, null, 2) : llmsTxt(PROFILE), {
-        headers: {
-          ...SECURITY_HEADERS,
-          "Content-Type": isJson ? "application/json; charset=utf-8" : "text/markdown; charset=utf-8",
-          "Access-Control-Allow-Origin": "*",
-          "Cache-Control": "public, max-age=3600",
-        },
-      });
     }
 
     const res = await env.ASSETS.fetch(request);
